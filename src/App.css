@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,75 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&amp');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@700&amp;display=swap');
+
+body {
+  background-color: #272838;
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pad {
+  padding: 1em;
+  background-color: #eb9486;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b2c27;
+  font-family: "Sintony", sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1 {
+  color: #f3de8a;
+  font-family: "MuseoModerno", cursive;
+  text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #F3FFDE;
+  height: 100vh
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #c9d585;
+  color: #272838;
+  font-family: "Sintony", sans-serif;
+  width: 10em;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
