@@ -2,6 +2,6 @@
   "short_name": "Drum Machine",
   "name": "Drum Machine in React",
   "start_url": ".",
-  "display": "standalone",
+  "display": "standalone"
 
 }
