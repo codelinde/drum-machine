@@ -29,10 +29,16 @@ class App extends React.Component {
 
   }
 
+  playSound(code) {
+    this.track = new Audio(drumKeys[code].sound);
+    this.track.play();
+  }
+
   handleKeyPress(event) {
     const pressCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
     if (pressCodes.includes(event.keyCode)) {
       this.handleEntry(event.keyCode);
+      this.playSound(event.keyCode);
     }
   }
   render() {
