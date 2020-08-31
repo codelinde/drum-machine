@@ -24,7 +24,7 @@ class App extends React.Component {
   handleEntry(code) {
     this.setState({
       kitDisplay: drumKeys[code].descript,
-      kitCode: drumKeys[code]
+      kitCode: code
     });
 
   }
@@ -48,15 +48,15 @@ class App extends React.Component {
         <h1>Drum Machine</h1>
       </div>
       <div className="grid">
-        <div className="pad">Q</div>
-        <div className="pad">W</div>
-        <div className="pad">E</div>
-        <div className="pad">A</div>
-        <div className="pad">S</div>
-        <div className="pad">D</div>
-        <div className="pad">Z</div>
-        <div className="pad">X</div>
-        <div className="pad">C</div>
+        <div id="q-pad" className={this.state.kitCode === 81 ? 'pad-active': 'pad' }>Q</div>
+        <div id="w-pad" className={this.state.kitCode === 87 ? 'pad-active': 'pad' }>W</div>
+        <div id="e-pad" className={this.state.kitCode === 69 ? 'pad-active': 'pad' }>E</div>
+        <div id="a-pad" className={this.state.kitCode === 65 ? 'pad-active': 'pad' }>A</div>
+        <div id="s-pad" className={this.state.kitCode === 83 ? 'pad-active': 'pad' }>S</div>
+        <div id="d-pad" className={this.state.kitCode === 68 ? 'pad-active': 'pad' }>D</div>
+        <div id="z-pad" className={this.state.kitCode === 90 ? 'pad-active': 'pad' }>Z</div>
+        <div id="x-pad" className={this.state.kitCode === 88 ? 'pad-active': 'pad' }>X</div>
+        <div id="c-pad" className={this.state.kitCode === 67 ? 'pad-active': 'pad' }>C</div>
       </div>
       <div className="bottom">
         {this.state.kitDisplay}
