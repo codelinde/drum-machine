@@ -1,3 +1,3 @@
 ## Drum Machine
 
-This is a work in progress. It is a React app that plays drum sounds on key press and displays the part of the drum kit sounding on the bottom display bar. Drum pad animations are available now, and mouse click functionality is to come.
+This is a React app that emulates a drum machine. When a user hits the corresponding key on their keyboard, the drum pad is pressed, an animation is displayed to indicate the triggering, and a drum sample (sound) is played. Additionally, the display bar on the bottom indicates the name of the drum pad being pressed.
