@@ -12,13 +12,16 @@ class App extends React.Component {
     };
     this.handleEntry = this.handleEntry.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.handleKeyRelease = this.handleKeyRelease.bind(this);
   }
 
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
+    document.addEventListener("keyup", this.handleKeyRelease);
   }
   componentWillUnmount() {
     document.removeEventListener("keydown", this.handleKeyPress);
+    document.removeEventListener("keyup", this.handleKeyRelease);
   }
 
   handleEntry(code) {
@@ -34,6 +37,12 @@ class App extends React.Component {
     this.track.play();
   }
 
+  resetState() {
+    this.setState({
+      kitCode: 0
+    });
+  }
+
   handleKeyPress(event) {
     const pressCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
     if (pressCodes.includes(event.keyCode)) {
@@ -41,6 +50,11 @@ class App extends React.Component {
       this.playSound(event.keyCode);
     }
   }
+
+  handleKeyRelease(event) {
+    this.resetState();
+  }
+
   render() {
     return (
       <div className="container">

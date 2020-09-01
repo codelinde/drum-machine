@@ -42,8 +42,8 @@
 
 body {
   background-color: #272838;
-  padding: 1em;
-  height: 100vh
+  padding: 0;
+  height: 100%
 }
 
 .grid {
@@ -71,12 +71,14 @@ body {
 
 .pad-active {
   padding: 1em;
-  background-color: #FF6B35;
+  background-color: #805851;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4b4237;
+  color: #eb9486;
   font-family: "Sintony", sans-serif;
+  outline: 3px solid #805851;
+  transition: .2s;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -104,7 +106,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 3px solid #F3FFDE;
+  /*border: 3px solid #F3FFDE;*/
   height: 100vh
 }
 
