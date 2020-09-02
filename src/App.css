@@ -78,7 +78,7 @@ body {
   color: #eb9486;
   font-family: "Sintony", sans-serif;
   outline: 3px solid #805851;
-  transition: .2s;
+  transition: .1s;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
